@@ -1,38 +1,116 @@
+:root {
+  --green: #08CB11;
+  --gray: #D6D6D6;
+  --old_green: #11AD19;
+  --red: #CE3000;
+  --old_red: #B22C03
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container {
+  width: 40%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-1 {
+  flex: 1
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-form {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+  flex: 1;
+  margin: 0 10px;
+}
+
+.input-container {
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+label {
+  margin: 0px 10px 5px 10px;
+}
+
+.button-container {
+  /* background-color: burlywood; */
+  margin: 0 10px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+.btn {
+  border-radius: 10px;
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--green);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  box-shadow: 1px 5px 5px var(--gray);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-red {
+  background-color: var(--red);
+}
+
+.jobdesc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-jobdesc {
+  background-color: var(--green);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.radio-button {
+  margin: 0 10px;
+  margin-bottom: 20px;
+
+}
+
+.confirmation {
+  border: 1px solid var(--gray);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.thanks {
+  background-color:  rgb(142, 250, 155);
+  padding: 20px 50px;
+  color: white;
+}
+
+.error{
+  background-color: var(--red);
+  color: white;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
